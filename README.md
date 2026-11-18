@@ -4,6 +4,8 @@
 
 License: MIT · Free · Nothing leaves your machine
 
+![A Command Center report on the sample notes folder](docs/sample-report.png)
+
 ## Start here, one paste
 
 Open Claude Code in the folder that holds your notes, then paste this.
