@@ -1,0 +1,13 @@
+{
+  "name": "cold-read",
+  "version": "0.1.0",
+  "description": "Test any document the way its reader will meet it, cold. A fresh agent with no context reads only the file and the original ask, grades it on eight points, and Claude fixes and re-reads until it passes.",
+  "author": {
+    "name": "Remix Systems",
+    "email": "andy@remixsystems.co",
+    "url": "https://remixsystems.co"
+  },
+  "homepage": "https://remixsystems.co",
+  "license": "MIT",
+  "keywords": ["writing", "review", "documents", "subagents", "clarity"]
+}

@@ -13,6 +13,12 @@
       "source": "./plugins/command-center",
       "description": "See your personal AI operating system from different sides. Lenses for a health score out of 100, your level from 1 to 5, and a Wrapped of your habit over a season. Reads files on your machine, uploads nothing.",
       "version": "0.1.0"
+    },
+    {
+      "name": "cold-read",
+      "source": "./plugins/cold-read",
+      "description": "Test any document the way its reader will meet it, cold. A fresh agent with no context reads only the file and the original ask, grades it on eight points, and Claude fixes and re-reads until it passes.",
+      "version": "0.1.0"
     }
   ]
 }

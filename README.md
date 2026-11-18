@@ -12,7 +12,7 @@ Open Claude Code in the folder that holds your notes, then paste this.
 
 ```text
 Install the Command Center plugin from the remix-systems marketplace at
-https://github.com/remixrevco/remix-command-center (if that link does not work,
+https://github.com/RemixSystems/remix-command-center (if that link does not work,
 I will give you a local path instead). Walk me through any Terminal step in plain
 words. When it is installed, run /command-center:health-score on this folder,
 show me the report, and tell me the one thing to fix first.
@@ -23,7 +23,7 @@ show me the report, and tell me the one thing to fix first.
 Two lines inside Claude Code.
 
 ```text
-/plugin marketplace add remixrevco/remix-command-center
+/plugin marketplace add RemixSystems/remix-command-center
 /plugin install command-center@remix-systems
 ```
 
@@ -89,11 +89,24 @@ Four dimensions, 100 points. Every check prints its evidence line, a count and t
 
 A check with no data, such as no inbox folder, is left out and the score is scaled. It never costs you points for not using our layout. No check needs a file anyone sells.
 
-## Check the plugin
+## Cold read, plugin two
+
+**The problem this solves.** A document that makes sense to the session that wrote it can be unreadable to the person who gets it. Cold read hands the file to a fresh agent that knows nothing else, grades it on eight points, and has Claude fix it until it passes.
+
+```text
+/plugin install cold-read@remix-systems
+/cold-read:cold-read path/to/your-plan.md
+```
+
+Try it on the flawed sample in `examples/sample-docs/`. Copy it somewhere first, because cold read edits the file it tests.
+
+## Check the plugins
 
 ```bash
 python3 tests/run_checks.py          # every detector must catch a known-bad seed
-claude plugin validate .             # manifest and skill checks
+claude plugin validate .             # marketplace check
+claude plugin validate plugins/command-center --strict
+claude plugin validate plugins/cold-read --strict
 ```
 
 ## Built by
