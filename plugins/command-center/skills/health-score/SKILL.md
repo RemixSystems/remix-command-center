@@ -20,7 +20,7 @@ python3 "${CLAUDE_PLUGIN_ROOT}/scripts/cc.py" health "<folder>"
 
 Checks with no data (no inbox, no index notes, no session logs) are left out and the score is scaled, never zeroed. Say so if the report shows points not scored.
 
-4. **Show the result.** Paste the terminal report in a code block, then give a two-line read of it in plain words. End with the one next step the report names and the path of the report page. On a Mac, offer to open it with `open <path>`.
+4. **Show the result.** Paste the report exactly as the script printed it, in a code block, down to the end of its first list (for the health score, through TOP FIXES). Do not reword, merge or round the lines. Then give a two-line read of it in plain words. End with the one next step the report names and the path of the report page. On a Mac, offer to open it with `open <path>`.
 
 ## Rules
 
