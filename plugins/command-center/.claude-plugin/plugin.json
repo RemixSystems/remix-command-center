@@ -1,0 +1,13 @@
+{
+  "name": "command-center",
+  "version": "0.1.0",
+  "description": "See your personal AI operating system from different sides. Lenses for a health score out of 100, your level from 1 to 5, and a Wrapped of your habit over a season. Reads files on your machine, uploads nothing.",
+  "author": {
+    "name": "Remix Systems",
+    "email": "andy@remixsystems.co",
+    "url": "https://remixsystems.co"
+  },
+  "homepage": "https://remixsystems.co",
+  "license": "MIT",
+  "keywords": ["obsidian", "notes", "second-brain", "health-check", "analytics", "wrapped"]
+}
